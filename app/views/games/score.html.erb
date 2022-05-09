@@ -2,9 +2,18 @@
 
 <h1>Result</h1>
 
-<p>Word you entered: <%= @word.upcase %></p>
-<p>Time it took you to answer: <%= @result[:time] %></p>
-<p>Your score: <%= @result[:score] %></p>
-<p><%= @result[:message] %></p>
+<p><strong><%= @result[:message] %></strong></p>
+
+<p>Word you entered:</p>
+<p><%= @word.upcase %></p>
+
+<p>Time it took you to answer:</p>
+<p><%= @result[:time] %> seconds</p>
+
+<p>This round's score:</p>
+<p><strong><%= @result[:score] %> points</strong></p>
+
+<p>Total score:</p>
+<p><strong><%= @total_score %> points</strong></p>
 
 <%= link_to 'Play again', new_path %>
