@@ -1,0 +1,10 @@
+<%# <% @end_time = Time.now %> %>
+
+<h1>Result</h1>
+
+<p>Word you entered: <%= @word.upcase %></p>
+<p>Time it took you to answer: <%= @result[:time] %></p>
+<p>Your score: <%= @result[:score] %></p>
+<p><%= @result[:message] %></p>
+
+<%= link_to 'Play again', new_path %>
